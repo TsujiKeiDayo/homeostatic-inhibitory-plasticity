@@ -1,0 +1,21 @@
+{
+  "diagnosis.json": "f1d087b8f36156020642c583c7631817ba02542bf7b1f14cd48f774057b28af9",
+  "ff_batch1_s0.npz": "ea2a81d3ccf129816ed6c690c81da48c2157c2a193d0fc508ef37838b3425a11",
+  "ff_batch1_s1.npz": "7af5147c9b3f6831abea8e1dada0e6f0942f3947fc217847ee678488e0d4e09c",
+  "ff_batch1_s2.npz": "cefbdee3bd83d4a381cc6a3149dd61109ad1d73144e88eb073af3af5fde6e89e",
+  "ff_batch2_s0.npz": "f8dd9f875cd20ae6f85e495d5ff63fff9286aa0726a85dd4e5512667e1baa8db",
+  "ff_batch2_s1.npz": "2ce95880273286a28458a0b4883785f753dd805e1ba28eaf5ad7e9b1781a69d8",
+  "ff_batch2_s2.npz": "cefbdee3bd83d4a381cc6a3149dd61109ad1d73144e88eb073af3af5fde6e89e",
+  "rec_batch1_s0.npz": "1c52fed7b21b3cb9102f5f34fe7f89579d5a8366861c42d8f7128481e108455c",
+  "rec_batch1_s1.npz": "cd2d93f96e98c99fa9288492b5dad4d77d20e315be0257e91049098b80610bad",
+  "rec_batch1_s2.npz": "019e9a46e5f4fcb770fddcfcdfb06d5abf21d1d544e11d3482d4858f4504e019",
+  "rec_batch2_s0.npz": "cef76dc5cbfbaf85267ffe7909e2575c3a7ab0ec3d5d066beb49b3dd1675026b",
+  "rec_batch2_s1.npz": "c0effa4fd2547b07b9a75444503679a2dbeefce1ccf6893bcba11d69e5648a9e",
+  "rec_batch2_s2.npz": "019e9a46e5f4fcb770fddcfcdfb06d5abf21d1d544e11d3482d4858f4504e019",
+  "thresh_batch1_s0.npz": "651ca6d9a9564faaf190e56a98ebfa211e572d39789a6cd901ac62ab911d8691",
+  "thresh_batch1_s1.npz": "90608c3e6e076b126c58c9b9cf67d73036cf4dc6b94757a870a80a821f6d84c3",
+  "thresh_batch1_s2.npz": "eae59cc21fc9e9de0caf7984546c277643312a46b0f67e4fff038e1815bef3d6",
+  "thresh_batch2_s0.npz": "651ca6d9a9564faaf190e56a98ebfa211e572d39789a6cd901ac62ab911d8691",
+  "thresh_batch2_s1.npz": "90608c3e6e076b126c58c9b9cf67d73036cf4dc6b94757a870a80a821f6d84c3",
+  "thresh_batch2_s2.npz": "eae59cc21fc9e9de0caf7984546c277643312a46b0f67e4fff038e1815bef3d6"
+}

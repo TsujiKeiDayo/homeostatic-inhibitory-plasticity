@@ -1,0 +1,310 @@
+{
+  "rule": {
+    "at_epoch": 1,
+    "var_weight": 1.0,
+    "stability_epochs": 2,
+    "stability_tol": 0.5
+  },
+  "arm": "d0.95_s3",
+  "n_epochs": 2,
+  "n_cells": 6,
+  "n_stable": 6,
+  "n_unstable": 0,
+  "n_boundary": 6,
+  "n_filter_changed": 0,
+  "cells": {
+    "ff@0.35": {
+      "selected_eta": 0.001,
+      "score": 0.1224999949336052,
+      "fluctuation": 0.07797937452361903,
+      "rate_mean": 0.0,
+      "rate_wmean": 0.0,
+      "residual": 1.0,
+      "residual_train": 1.0,
+      "n_candidates": 2,
+      "n_grid": 2,
+      "boundary": true,
+      "boundary_side": "low",
+      "reason": "argmin_stable",
+      "eta_unfiltered": 0.001,
+      "filter_changed": false,
+      "grid": [
+        0.001,
+        0.003
+      ],
+      "table": [
+        {
+          "eta": 0.001,
+          "n_seeds": 2,
+          "score": 0.1224999949336052,
+          "score_std": 0.0,
+          "fluctuation": 0.07797937452361903,
+          "stable": true,
+          "rate_mean": 0.0,
+          "rate_wmean": 0.0,
+          "residual": 1.0,
+          "residual_train": 1.0
+        },
+        {
+          "eta": 0.003,
+          "n_seeds": 2,
+          "score": 0.9185054560657591,
+          "score_std": 0.3469547329004854,
+          "fluctuation": -0.22487865390780737,
+          "stable": true,
+          "rate_mean": 0.47378192842006683,
+          "rate_wmean": 0.4745643585920334,
+          "residual": 0.35589816740580976,
+          "residual_train": 0.24738425016403207
+        }
+      ],
+      "model_code": "ff",
+      "targ": 0.35
+    },
+    "ff@0.55": {
+      "selected_eta": 0.001,
+      "score": 0.2991813783592079,
+      "fluctuation": 0.2554254501961739,
+      "rate_mean": 0.0032469776924699545,
+      "rate_wmean": 0.0030317064374685287,
+      "residual": 0.9944878064773299,
+      "residual_train": 0.9891424518269063,
+      "n_candidates": 2,
+      "n_grid": 2,
+      "boundary": true,
+      "boundary_side": "low",
+      "reason": "argmin_stable",
+      "eta_unfiltered": 0.001,
+      "filter_changed": false,
+      "grid": [
+        0.001,
+        0.003
+      ],
+      "table": [
+        {
+          "eta": 0.001,
+          "n_seeds": 2,
+          "score": 0.2991813783592079,
+          "score_std": 0.0033186311775352806,
+          "fluctuation": 0.2554254501961739,
+          "stable": true,
+          "rate_mean": 0.0032469776924699545,
+          "rate_wmean": 0.0030317064374685287,
+          "residual": 0.9944878064773299,
+          "residual_train": 0.9891424518269063
+        },
+        {
+          "eta": 0.003,
+          "n_seeds": 2,
+          "score": 1.7502558827400208,
+          "score_std": 1.4477558732032776,
+          "fluctuation": 0.16448190386830075,
+          "stable": true,
+          "rate_mean": 0.6837387681007385,
+          "rate_wmean": 0.6831774711608887,
+          "residual": 0.2421408566561611,
+          "residual_train": 0.11023133451288387
+        }
+      ],
+      "model_code": "ff",
+      "targ": 0.55
+    },
+    "rec@0.35": {
+      "selected_eta": 0.001,
+      "score": 0.0266629719408229,
+      "fluctuation": 0.06391980707948508,
+      "rate_mean": 0.4129052013158798,
+      "rate_wmean": 0.4201574921607971,
+      "residual": 0.20044997760227756,
+      "residual_train": 0.059569290706089635,
+      "n_candidates": 2,
+      "n_grid": 2,
+      "boundary": true,
+      "boundary_side": "low",
+      "reason": "argmin_stable",
+      "eta_unfiltered": 0.001,
+      "filter_changed": false,
+      "grid": [
+        0.001,
+        0.003
+      ],
+      "table": [
+        {
+          "eta": 0.001,
+          "n_seeds": 2,
+          "score": 0.0266629719408229,
+          "score_std": 0.002004793961532414,
+          "fluctuation": 0.06391980707948508,
+          "stable": true,
+          "rate_mean": 0.4129052013158798,
+          "rate_wmean": 0.4201574921607971,
+          "residual": 0.20044997760227756,
+          "residual_train": 0.059569290706089635
+        },
+        {
+          "eta": 0.003,
+          "n_seeds": 2,
+          "score": 0.03157443180680275,
+          "score_std": 0.0004361700266599655,
+          "fluctuation": 0.08156945676562066,
+          "stable": true,
+          "rate_mean": 0.41709810495376587,
+          "rate_wmean": 0.4243853688240051,
+          "residual": 0.2125296252114433,
+          "residual_train": 0.07005451406751367
+        }
+      ],
+      "model_code": "rec",
+      "targ": 0.35
+    },
+    "rec@0.55": {
+      "selected_eta": 0.001,
+      "score": 0.038137759547680616,
+      "fluctuation": -0.012088258864766055,
+      "rate_mean": 0.4269113391637802,
+      "rate_wmean": 0.4344884902238846,
+      "residual": 0.21002092686566445,
+      "residual_train": 0.3015825748443604,
+      "n_candidates": 2,
+      "n_grid": 2,
+      "boundary": true,
+      "boundary_side": "low",
+      "reason": "argmin_stable",
+      "eta_unfiltered": 0.001,
+      "filter_changed": false,
+      "grid": [
+        0.001,
+        0.003
+      ],
+      "table": [
+        {
+          "eta": 0.001,
+          "n_seeds": 2,
+          "score": 0.038137759547680616,
+          "score_std": 0.0024453462101519108,
+          "fluctuation": -0.012088258864766055,
+          "stable": true,
+          "rate_mean": 0.4269113391637802,
+          "rate_wmean": 0.4344884902238846,
+          "residual": 0.21002092686566445,
+          "residual_train": 0.3015825748443604
+        },
+        {
+          "eta": 0.003,
+          "n_seeds": 2,
+          "score": 0.04128736164420843,
+          "score_std": 0.00010848604142665863,
+          "fluctuation": 0.07326934083479753,
+          "stable": true,
+          "rate_mean": 0.4586260914802551,
+          "rate_wmean": 0.4668130576610565,
+          "residual": 0.1512489860708064,
+          "residual_train": 0.24718642776662658
+        }
+      ],
+      "model_code": "rec",
+      "targ": 0.55
+    },
+    "thresh@0.35": {
+      "selected_eta": 0.003,
+      "score": 20.63643491268158,
+      "fluctuation": -0.016360273785779866,
+      "rate_mean": 4.802127361297607,
+      "rate_wmean": 4.802127361297607,
+      "residual": 12.720363889421737,
+      "residual_train": 11.614921161106656,
+      "n_candidates": 2,
+      "n_grid": 2,
+      "boundary": true,
+      "boundary_side": "high",
+      "reason": "argmin_stable",
+      "eta_unfiltered": 0.003,
+      "filter_changed": false,
+      "grid": [
+        0.001,
+        0.003
+      ],
+      "table": [
+        {
+          "eta": 0.001,
+          "n_seeds": 2,
+          "score": 21.09601065516472,
+          "score_std": 0.2395993173122406,
+          "fluctuation": -0.005484960963335617,
+          "stable": true,
+          "rate_mean": 4.8513054847717285,
+          "rate_wmean": 4.8513054847717285,
+          "residual": 12.860872813633511,
+          "residual_train": 11.75543076651437
+        },
+        {
+          "eta": 0.003,
+          "n_seeds": 2,
+          "score": 20.63643491268158,
+          "score_std": 0.225902259349823,
+          "fluctuation": -0.016360273785779866,
+          "stable": true,
+          "rate_mean": 4.802127361297607,
+          "rate_wmean": 4.802127361297607,
+          "residual": 12.720363889421737,
+          "residual_train": 11.614921161106656
+        }
+      ],
+      "model_code": "thresh",
+      "targ": 0.35
+    },
+    "thresh@0.55": {
+      "selected_eta": 0.003,
+      "score": 18.925978899002075,
+      "fluctuation": -0.016295564614587033,
+      "rate_mean": 4.805700302124023,
+      "rate_wmean": 4.805700302124023,
+      "residual": 7.73763691295277,
+      "residual_train": 7.0341737920587715,
+      "n_candidates": 2,
+      "n_grid": 2,
+      "boundary": true,
+      "boundary_side": "high",
+      "reason": "argmin_stable",
+      "eta_unfiltered": 0.003,
+      "filter_changed": false,
+      "grid": [
+        0.001,
+        0.003
+      ],
+      "table": [
+        {
+          "eta": 0.001,
+          "n_seeds": 2,
+          "score": 19.34578761458397,
+          "score_std": 0.224979430437088,
+          "fluctuation": -0.005463590065587276,
+          "stable": true,
+          "rate_mean": 4.852502822875977,
+          "rate_wmean": 4.852502822875977,
+          "residual": 7.822732405229048,
+          "residual_train": 7.11926928433505
+        },
+        {
+          "eta": 0.003,
+          "n_seeds": 2,
+          "score": 18.925978899002075,
+          "score_std": 0.21193927526474,
+          "fluctuation": -0.016295564614587033,
+          "stable": true,
+          "rate_mean": 4.805700302124023,
+          "rate_wmean": 4.805700302124023,
+          "residual": 7.73763691295277,
+          "residual_train": 7.0341737920587715
+        }
+      ],
+      "model_code": "thresh",
+      "targ": 0.55
+    }
+  },
+  "schedule": {
+    "eta_decay": 0.95,
+    "eta_decay_start_epoch": 3,
+    "n_epochs": 2
+  }
+}

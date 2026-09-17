@@ -1,0 +1,2 @@
+best_val_accuracy,final_val_accuracy,final_test_accuracy,final_test_accuracy_full,n_features,n_classes,final_cumulative_l1
+0.3333333333333333,0.3333333333333333,0.3333333333333333,0.3333333333333333,12,3,0.07880410552024841

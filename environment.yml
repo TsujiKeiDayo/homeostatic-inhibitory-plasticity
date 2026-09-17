@@ -1,0 +1,20 @@
+# Optional conda environment for the Windows 11 / NVIDIA GPU setup.
+#
+# Run from the repository root:
+# Create:   conda env create -f environment.yml
+# Activate: conda activate hnn2-reduced
+# Check:    python -m pip check
+#
+# Python matches the verified .venv interpreter. Package versions are pinned
+# in requirements-lock.txt, including the CUDA 12.6 PyTorch wheels.
+# The verified environment is .venv; this conda recipe has not been recreated
+# and tested independently. See README.md for the primary setup instructions.
+name: hnn2-reduced
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13.1
+  - pip
+  - pip:
+      - -r requirements-lock.txt
+      - -e .

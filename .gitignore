@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+outputs/
+notebook_runs/
+tmp/
+logs/
+graphify-out/
+sandbox/
+docs/
+.ruff_cache/
+history/
+# Shared input data is preserved locally and described in history/migration/ARCHIVE.md.
+data/
+
+comment_regulations.md
+/CLAUDE.md

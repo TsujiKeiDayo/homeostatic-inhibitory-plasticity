@@ -1,0 +1,84 @@
+{
+  "config": {
+    "schema_version": 1,
+    "image_size": [
+      10,
+      10
+    ],
+    "raw_baseline_size": [
+      22,
+      22
+    ],
+    "n_samples_per_split": 1024,
+    "train_val_ratio": 0.9,
+    "data_seed": 0,
+    "n_excitatory": 12,
+    "n_inhibitory": 1,
+    "tau_e": 2.0,
+    "tau_i": 20.0,
+    "theta_init": 0.175,
+    "settle_steps": 35,
+    "n_stabilise": 2,
+    "n_epochs": 3,
+    "batch_size": 7,
+    "eta_decay": 0.95,
+    "eta_decay_start_epoch": 3,
+    "monitor_var_weight": 1.0,
+    "monitor_probe_split": "val",
+    "analysis_probe_split": "test",
+    "readout_epochs": 3,
+    "readout_lr": 0.003,
+    "readout_eval_every": 2,
+    "readout_standardize": false,
+    "readout_final_eval_full_test": true
+  },
+  "cases": [
+    "rec_initial_s0",
+    "rec_trained_s0",
+    "ff_initial_s0",
+    "ff_trained_s0",
+    "thresh_initial_s0",
+    "thresh_trained_s0",
+    "raw_s0",
+    "mlp_s0",
+    "rec_initial_s1",
+    "rec_trained_s1",
+    "ff_initial_s1",
+    "ff_trained_s1",
+    "thresh_initial_s1",
+    "thresh_trained_s1",
+    "raw_s1",
+    "mlp_s1"
+  ],
+  "seeds": [
+    0,
+    1
+  ],
+  "target": 0.35,
+  "eta": 0.001,
+  "mlp": {
+    "epochs": 2,
+    "lr": 0.003,
+    "batch_size": 7
+  },
+  "hp_rule": {
+    "at_epoch": 1,
+    "var_weight": 1.0,
+    "stability_epochs": 2,
+    "stability_tol": 0.5
+  },
+  "array_comparison": "exact for CPU sequential; frozen M2 tolerances for CSV",
+  "batch_tolerances": {
+    "weights": [
+      1e-05,
+      1e-07
+    ],
+    "monitor_activity": [
+      0.0001,
+      1e-06
+    ]
+  },
+  "cuda_available": true,
+  "device_name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "scope": "Existing functions on fixed synthetic data; not research performance conclusions"
+}

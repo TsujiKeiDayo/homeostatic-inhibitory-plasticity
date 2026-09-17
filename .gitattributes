@@ -1,0 +1,6 @@
+# Notebook outputs never reach git: `nbstripout --install` (once per clone,
+# see notebooks/README.md) registers the filter these attributes name. The
+# three lines are the ones `nbstripout --install` writes, so it changes nothing.
+*.ipynb filter=nbstripout
+*.zpln filter=nbstripout
+*.ipynb diff=ipynb

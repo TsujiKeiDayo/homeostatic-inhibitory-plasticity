@@ -1,0 +1,14 @@
+{
+  "dataset.npz": "9b6eed8383642bcb157256cd4ab69ed05a0f68fdc178bca06870c70bad0b8aae",
+  "conditions.json": "0d4d8d85f35c4a4ce8133486ab303cd54a01cc0ceac3fde152ed9233f8d1d178",
+  "reference/activity.npz": "bc51d6a9cb387b4b030b7edea81d040321da953e5caae44e959e5c3f4700c352",
+  "reference/entropy.csv": "61f33793b3430339c37faa14e3e06a69c1136fe089fd29b1a6002f2d134e2207",
+  "reference/features.npz": "c3320613ccd3d1c51c5d46d9ad8c3dfc33af52117e791fef6d9075241d1fc001",
+  "reference/history.csv": "84e00f29afb1adf84440016e5409674fa843f2b2048b2ee4d3d12c49b7b9bf64",
+  "reference/monitor.csv": "7237c27fc56044c546c934f771c4736f1db671655a733261e13f161d20a0cba4",
+  "reference/silhouette.csv": "c64e7cbd93cc7db85dafef5721d0aed26bac4c440f3a8e9cfc6559fad22bac1f",
+  "reference/summaries.npz": "56554e2c9fa3fa7bd88174cefae6c5b7b977709fd779aad3c3523bf7e29940e1",
+  "reference/summary.csv": "b583da8696aedfadcd2f796fc66bda1030cfb6dae5cd75de10ef7e79e98d56d6",
+  "reference/weights_initial.npz": "db2f73fc625babf82fe02e8a48f9e3e799d43582d24cfcd0a8d054f73c2f8f5e",
+  "reference/weights_trained.npz": "04f01fb8e4f03494a4fb3645e94325c87ac2a047f3b76151d8095ac661974f80"
+}

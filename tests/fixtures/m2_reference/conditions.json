@@ -1,0 +1,77 @@
+{
+  "config": {
+    "schema_version": 1,
+    "image_size": [
+      10,
+      10
+    ],
+    "raw_baseline_size": [
+      22,
+      22
+    ],
+    "n_samples_per_split": 1024,
+    "train_val_ratio": 0.9,
+    "data_seed": 0,
+    "n_excitatory": 12,
+    "n_inhibitory": 1,
+    "tau_e": 2.0,
+    "tau_i": 20.0,
+    "theta_init": 0.175,
+    "settle_steps": 35,
+    "n_stabilise": 2,
+    "n_epochs": 3,
+    "batch_size": 7,
+    "eta_decay": 0.95,
+    "eta_decay_start_epoch": 3,
+    "monitor_var_weight": 1.0,
+    "monitor_probe_split": "val",
+    "analysis_probe_split": "test",
+    "readout_epochs": 3,
+    "readout_lr": 0.003,
+    "readout_eval_every": 2,
+    "readout_standardize": false,
+    "readout_final_eval_full_test": true
+  },
+  "spec": {
+    "model_code": "rec",
+    "targ": 0.35,
+    "eta": 0.001,
+    "seed_index": 0
+  },
+  "analysis": {
+    "split": "test",
+    "metrics": [
+      "entropy",
+      "silhouette"
+    ],
+    "population_bins": {
+      "lo": 0.0,
+      "hi": 6.0,
+      "width": 0.05
+    },
+    "lifetime_bins": {
+      "lo": 0.0,
+      "hi": 3.0,
+      "width": 0.05
+    },
+    "allow_dropped": true,
+    "metric": "cosine",
+    "center": false
+  },
+  "seeds": {
+    "root_seed": 10007,
+    "readout_init": 796238016879210975,
+    "readout_shuffle": 2118541467
+  },
+  "device": "cpu",
+  "torch_threads": 1,
+  "comparison": {
+    "arrays": "exact including shape, dtype and NaN positions",
+    "csv": {
+      "rtol": 1e-12,
+      "atol": 1e-12,
+      "note": "serialization only; same CPU numerical operations"
+    }
+  },
+  "scope": "Synthetic structural migration check, not MNIST accuracy or full M3 validation"
+}
