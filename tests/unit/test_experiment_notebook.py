@@ -25,8 +25,15 @@ NOTEBOOK = ROOT / 'notebooks/run_experiment.ipynb'
 
 
 def run_cell(name, namespace):
-    cell = next(c for c in nbformat.read(NOTEBOOK, 4).cells if c.id == name)
-    exec(compile(cell.source, f'{NOTEBOOK.name}:{name}', 'exec'), namespace)
+    # Execute each former single-cell section through its current split cells.
+    cells = [c for c in nbformat.read(NOTEBOOK, 4).cells if c.cell_type == 'code']
+    ids = [c.id for c in cells]
+    start = ids.index(name)
+    stop_name = {'prepare': 'record', 'record': 'hp', 'results': 'figure-paths'}.get(name)
+    stop = ids.index(stop_name) if stop_name else start + 1
+    assert stop > start
+    for cell in cells[start:stop]:
+        exec(compile(cell.source, f'{NOTEBOOK.name}:{cell.id}', 'exec'), namespace)
 
 
 def hashes(directory):
@@ -219,7 +226,9 @@ def test_fresh_kernel_preview_never_trains_or_writes(saved, tmp_path, existing):
     for cell in notebook.cells:
         assert cell.source.isascii()
         if cell.cell_type == 'code':
-            assert cell.execution_count is None and not cell.outputs
+            # Reset only this in-memory copy; saved notebook outputs stay intact.
+            cell.execution_count = None
+            cell.outputs = []
     target = saved.parent if existing else tmp_path / 'empty'
     selection_conditions = json.loads((saved / 'hp/selection/conditions.json').read_text(encoding='utf-8'))
     settings = next(c for c in notebook.cells if c.id == 'settings')
